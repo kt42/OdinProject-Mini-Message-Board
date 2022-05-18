@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title><%= 'ffffffffff' %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1><%='eeeeeeeee'%></h1>
+    <ul>
+      <% for(const msg of messages) {%>
+      <li>
+        <div><sub><%=format(msg.added, {addSuffix: true})%></sub></div>
+        <div><strong><%=msg.user%></strong></div>
+        <%=msg.text%>
+      </li>
+      <% } %>
+    </ul>
   </body>
 </html>
+
+
+
